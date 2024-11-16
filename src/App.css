@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+body{
+  background-image: url('bgimage.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Host Grotesk";
+  font-style: italic;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-color: rgb(187, 160, 141, 0.8);
+  width: 500px;
+  min-height: 80vh;
+  margin: 40px auto;
+  border-radius: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main, .header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dltline{
+  text-decoration: line-through 2px red;
 }
+.crossed{
+  text-decoration: line-through 2px red;
+}
+.header{
+  color:brown;
+  font-family: "Host Grotesk";
+  font-style: normal;
+  font-size: 25px;
+}
+input{
+  flex: 1;
+  padding: 15px;
+  margin: 12px;
+  border-radius: 12px;
+  border: none;
+  color: #011812;
+  font-family: "Host Grotesk";
+  font-size: 16px;
+}
+li{
+  color: #181b1a;
+  font-family: "Host Grotesk";
+  font-size: 18px;
+  
+  
+}
+.btn-add{
+  width: 50%;
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "Host Grotesk", sans-serif;
+  border: none;
+  border-radius: 12px;
+  background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+  cursor: pointer;
+  color: #181b1a;
+  font-weight: 500;
+}
+.btn-add:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+   .btn-dlt{
+    width: 50%;
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: "Host Grotesk", sans-serif;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+    transition: 0.5s;
+    box-shadow: 0 0 20px #eee;
+    cursor: pointer;
+    color: #181b1a;
+    font-weight: 500;
+  }
+  .btn-dlt:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+     }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
